@@ -1,0 +1,287 @@
+
+//引入配置文件value
+@import "../lib/value.less";
+
+//引入less库
+@import "../lib/less-lib.less";
+
+
+//重置css样式
+.reset();
+
+
+body{
+  font: 12px/1.5 YaHei;
+  background: #fff;
+  position: relative;
+}
+/*
+ *  顶部样式
+ */
+.header{
+  background: url("../../img/header_bg.png") repeat-x;
+  height: 30px;
+}
+.header-box{
+  width: 900px;
+  margin:0 auto;
+  height: 100%;
+}
+
+.header-box-login,
+.header-box-register,
+.header-member-box{
+  float: right;
+  height: 100%;
+  line-height: 30px;
+  cursor: pointer;
+  width: 35px;
+}
+
+.header-member-box{
+  width: 70px;
+  position: relative;
+  background-image: url(../../img/ui-sprite.png);
+  background-repeat: no-repeat;
+  background-position: 55px 12px;
+}
+.header-member-list{
+  position: absolute;
+  top: 30px;
+  width: 100px;
+  padding: 10px 0;
+  left: -20px;
+  border: 1px solid #999;
+  border-top: 0 none;
+  background: #FBF7E1;
+  height: 0;
+  overflow: hidden;
+  .opacity(0,0);
+  .transition(all 0.15s);
+  li{
+    line-height: 20px;
+    height: 20px;
+    a{
+      display: block;
+      color: #000000;
+      padding-left: 20px;
+      background-image: url(../../img/ui-sprite.png);
+      background-repeat: no-repeat;
+      background-position: 3px -50px;
+      &:hover{
+        text-decoration: none;
+        background-position: 3px -70px;
+      }
+    }
+  }
+  &.active{
+    height: 80px;
+    .opacity(1,100);
+  }
+
+}
+
+
+/*
+ *  登录模态框的样式
+ */
+.modal{
+  width: 350px;
+  height: 250px;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  z-index: 1050;
+  background: #ffffff;
+  display: none;
+}
+.modal-title{
+  background: url(../../img/login_header.png) repeat-x;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #666;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: move;
+}
+.modal-close{
+  width: 14px;
+  height: 14px;
+  float: right;
+  margin: 13px 13px 0 0;
+  background: url(../../img/ui-sprite.png) no-repeat 0 -95px;
+  cursor: pointer;
+}
+.input-group{
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  padding: 5px 0;
+  input{
+    width: 200px;
+    height: 25px;
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 14px;
+  }
+}
+.input-button{
+  text-align: center;
+  padding: 20px 0;
+}
+.btn{
+  width: 107px;
+  height: 30px;
+  background: url(../../img/ui-sprite.png) no-repeat 0 -110px;
+  border: none;
+  cursor: pointer;
+}
+.modal-footer{
+  text-align: right;
+  padding: 15px 10px;
+  color: #666;
+}
+.modal-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  .opacity(0.28,28);
+  display: none;
+}
+
+/*
+ *  分享栏的样式
+ */
+.share{
+  width: 210px;
+  height: 315px;
+  border: 1px solid #ccc;
+  position: absolute;
+  .transform-translate3d(-211px,0,0);
+  //left: -211px;
+  background: #fff;
+  .transition(all 0.15s);
+  &.active{
+    .transform-translate3d(0,0,0);
+  }
+}
+.share-title{
+  height: 30px;
+  line-height: 30px;
+  background: #eee;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  text-indent: 10px;
+}
+.share-list{
+  height: 254px;
+  padding: 3px 0 2px 5px;
+}
+.share-list-li{
+  width: 96px;
+  height: 28px;
+  float: left;
+  padding: 2px;
+  a{
+    display: block;
+    width: 95px;
+    height: 26px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #666;
+    background-image: url(../../img/share_bg.png);
+    background-repeat: no-repeat;
+    text-indent: 30px;
+    &:hover{
+      .opacity(0.7,70);
+      background-color:#eee;
+      color:#06f;
+    }
+  }
+}
+.share-list-li-one{
+  background-position:5px 4px;
+}
+.share-list-li-two{
+  background-position:5px -26px;
+}
+.share-list-li-three{
+  background-position:5px -56px;
+}
+.share-list-li-four{
+  background-position:5px -86px;
+}
+.share-list-li-five{
+  background-position:5px -116px;
+}
+.share-list-li-six{
+  background-position:5px -146px;
+}
+.share-list-li-seven{
+  background-position:5px -176px;
+}
+.share-list-li-eight{
+  background-position:5px -206px;
+}
+.share-list-li-nine{
+  background-position:5px -236px;
+}
+.share-list-li-ten{
+  background-position:5px -266px;
+}
+.share-list-li-enelven{
+  background-position:5px -296px;
+}
+.share-list-li-twenlve{
+  background-position:5px -326px;
+}
+.share-list-li-thirteen{
+  background-position:5px -356px;
+}
+.share-list-li-fourteen{
+  background-position:5px -386px;
+}
+.share-list-li-fifteen{
+  background-position:5px -416px;
+}
+.share-list-li-sixteen{
+  background-position:5px -446px;
+}
+.share-footer{
+  height: 26px;
+  background: #eee;
+  text-align: right;
+  line-height: 26px;
+  a{
+    padding: 0 0 0 13px;
+    background: #eee url(../../img/share_bg.png) no-repeat 0 -477px;
+    text-decoration: none;
+    color: #666;
+    &:hover{
+      color:#06f;
+      .opacity(0.7,70);
+    }
+  }
+}
+.share-button{
+  display: block;
+  width: 24px;
+  height: 88px;
+  position: absolute;
+  background: url(../../img/ui-sprite.png) 0 -152px;
+  cursor: pointer;
+  border: 0 none;
+  outline: none;
+  top: 110px;
+  left: 210px;
+}

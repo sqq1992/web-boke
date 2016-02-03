@@ -1,0 +1,135 @@
+//less库，里面都是些函数性的样式，需要手动引用函数进行编译
+
+/*
+ *  页面重置样式
+ */
+.reset(){
+  html,body,h1,h2,h3,h4,h5,h6,div,ul,ol,li,dl,dt,dd,iframe,textarea,input,button,p,strong,b,a,span,del,pre,table,tr,th,td{margin:0; padding:0; -webkit-text-size-adjust:none;}
+  a{text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  ul,dl,ol{list-style:none;}
+  img{border:0 none;}
+  h1,h2,h3,h4,h5,h6,em,del{font-style:normal; font-weight:normal; font-size:100%; -webkit-text-size-adjust:none;}
+  .cl{zoom:1;}
+  .cl:after{display:block;  height:0;  clear:both;  visibility:hidden;  overflow:hidden;  content:'.';}
+}
+
+/*
+ *  过度和动画样式
+ */
+.transition(@data){
+  -webkit-transition: @data;
+  -moz-transition: @data;
+  -o-transition: @data;
+  -ms-transition: @data;
+  transition: @data;
+}
+.transform(@data){
+  -webkit-transform: (@data);
+  -moz-transform: (@data);
+  -ms-transform: (@data);
+  -o-transform: (@data);
+  transform: (@data);
+}
+.transform-translateZ(@data){
+  -webkit-transform: translateZ(@data);
+  -moz-transform: translateZ(@data);
+  -ms-transform: translateZ(@data);
+  -o-transform: translateZ(@data);
+  transform: translateZ(@data);
+}
+.transform-translateX(@data){
+  -webkit-transform: translateX(@data);
+  -moz-transform: translateX(@data);
+  -ms-transform: translateX(@data);
+  -o-transform: translateX(@data);
+  transform: translateX(@data);
+}
+.transform-translate3d(@data1,@data2,@data3){
+  -webkit-transform: translate3d(@data1,@data2,@data3);
+  -moz-transform: translate3d(@data1,@data2,@data3);
+  -ms-transform: translate3d(@data1,@data2,@data3);
+  -o-transform: translate3d(@data1,@data2,@data3);
+  transform: translate3d(@data1,@data2,@data3);
+}
+.transform-scale(@data){
+  -webkit-transform: scale(@data);
+  -moz-transform: scale(@data);
+  -o-transform: scale(@data);
+  -ms-transform: scale(@data);
+  transform: scale(@data);
+}
+.transform-rotate(@data){
+  -webkit-transform: rotate(@data);
+  -moz-transform: rotate(@data);
+  -o-transform: rotate(@data);
+  -ms-transform: rotate(@data);
+  transform: rotate(@data);
+}
+.transform-origin(@args){
+  -webkit-transform-origin: @args;
+  -moz-transform-origin: @args;
+  -o-transform-origin: @args;
+  -ms-transform-origin: @args;
+  transform-origin: @args;
+}
+.animation(@data){
+  -webkit-animation: @data;
+  -moz-animation: @data;
+  -o-animation: @data;
+  -ms-animation: @data;
+  animation: @data;
+}
+.animation-delay(@data){
+    -webkit-animation-delay: @data;
+    -moz-animation-delay: @data;
+    -o-animation-delay: @data;
+    -ms-animation-delay:@data;
+    animation-delay: @data;
+}
+
+
+/*选择样式*/
+.user-select(@data){
+  -webkit-user-select: @data;
+  -moz-user-select: @data;
+  -ms-user-select: @data;
+  user-select: @data;
+}
+.text-size-adjust(@data){
+  -webkit-text-size-adjust: @data;
+  -moz-text-size-adjust: @data;
+  -ms-text-size-adjust: @data;
+  -o-text-size-adjust: @data;
+  text-size-adjust: @data;
+}
+
+/*
+ *  弹性布局
+ */
+.display-flex(){
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex-horizontal(){
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.flex(@data){
+  -webkit-box-flex: @data;
+  -webkit-flex: @data;
+  -ms-flex: @data;
+  flex: @data;
+}
+
+/*
+ *
+ */
+.opacity(@data1,@data2){
+  opacity: @data1;
+  filter:alpha(opacity= @data2);
+}
