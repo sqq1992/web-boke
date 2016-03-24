@@ -14,6 +14,8 @@ $(function () {
     //登录功能
     Login.init();
 
+    //开启注册的校验数据
+    $("#register").Verify();
 });
 
 /**

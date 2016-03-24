@@ -75,6 +75,113 @@
         </div>
     </div>
 
+    <!--注册模态框-->
+    <div class="modal register-modal" id="register-modal">
+        <h2 class="modal-title modal-move">
+            <div class="modal-close"></div>
+            会员注册
+        </h2>
+        <form name="reg" id="register">
+            <dl class="reg-sum-list">
+                <dd class="reg-list">
+                    <span class="reg-list-title">用户名:</span>
+                    <input type="text" name="userName" class="reg-list-input">
+                    <span class="reg-info reg-info_prompt">请输入用户名，2~20位，由字母、数字和下划线组成！</span>
+                    <span class="reg-info reg-info_error">输入不合法，请重新输入！</span>
+                    <span class="reg-info reg-info_succ">可用</span>
+                </dd>
+                <dd class="reg-list">
+                    <span class="reg-list-title">密码:</span>
+                    <input type="text" name="" class="reg-list-input">
+                    <span class="reg-info reg-info_password">
+                        <p>
+                            安全级别
+                            <strong>■</strong>
+                            <strong>■</strong>
+                            <strong>■</strong>
+                            <strong>中</strong>
+                        </p>
+                        <p>
+                            <strong>○</strong>
+                            6-20个字符
+                        </p>
+                        <p>
+                            <strong>○</strong>
+                            只能包含大小写字母、数字和非空格字符
+                        </p>
+                        <p>
+                            <strong>○</strong>
+                            大、小写字母、数字、非空字符，2种以上
+                        </p>
+                    </span>
+                    <span class="reg-info reg-info_error">输入不合法，请重新输入！</span>
+                    <span class="reg-info reg-info_succ">可用</span>
+                </dd>
+                <dd class="reg-list">
+                    <span class="reg-list-title">密码确认:</span>
+                    <input type="text" name="" class="reg-list-input">
+                    <span class="reg-info reg-info_prompt_small">请再一次输入密码！</span>
+                    <span class="reg-info reg-info_error">密码不一致，请重新输入！</span>
+                    <span class="reg-info reg-info_succ">可用</span>
+                </dd>
+                <dd class="reg-list">
+                    <span class="reg-list-title">提问:</span>
+                    <select class="reg-list-input">
+                        <option value="0">---请选择---</option>
+                        <option value="1">- - 您最喜欢吃的菜</option>
+                        <option value="2">- - 您的狗狗的名字</option>
+                        <option value="3">- - 您的出生地</option>
+                        <option value="4">- - 您最喜欢的明星</option>
+                    </select>
+                    <span class="reg-info reg-info_error">尚未选择提问，请选择！</span>
+                </dd>
+                <dd class="reg-list">
+                    <span class="reg-list-title">回答:</span>
+                    <input type="text" name="" class="reg-list-input">
+                    <span class="reg-info reg-info_prompt_small">请输入回答，2~32位！</span>
+                    <span class="reg-info reg-info_error">回答不合法，请重新输入！</span>
+                    <span class="reg-info reg-info_succ">可用</span>
+                </dd>
+                <dd class="reg-list">
+                    <span class="reg-list-title">电子邮件:</span>
+                    <input type="text" name="" class="reg-list-input">
+                    <span class="reg-info reg-info_prompt_small">请输入电子邮件！</span>
+                    <span class="reg-info reg-info_error">邮件不合法，请重新输入！</span>
+                    <span class="reg-info reg-info_succ">可用</span>
+                </dd>
+                <dd class="reg-list reg-list-select">
+                    <span class="reg-list-title">生日:</span>
+                    <select name="year" class="reg-list-input">
+                        <option value="0">- 年 -</option>
+                    </select>
+                    <span class="reg-list-perch">-</span>
+                    <select name="month" class="reg-list-input">
+                        <option value="0">- 月 -</option>
+                    </select>
+                    <span class="reg-list-perch">-</span>
+                    <select name="day" class="reg-list-input">
+                        <option value="0">- 日 -</option>
+                    </select>
+                    <span class="reg-info reg-info_error">尚未全部选择，请选择！</span>
+                </dd>
+                <dd class="reg-list reg-list-textarea">
+                    <span class="reg-list-title">备注:</span>
+                    <textarea class="reg-list-remark">
+                    </textarea>
+                    <div class="reg-info-sum-textarea">
+                        <div>dasdsadasd</div>
+                    </div>
+                </dd>
+                <dd class="reg-list">
+                    <input type="button" class="reg-list-submit">
+                </dd>
+            </dl>
+        </form>
+        <div>
+            dsadasdasdasdas
+        </div>
+    </div>
+
     <!--模态框背景-->
     <div class="modal-bg" id="modal-bg"></div>
 
@@ -88,8 +195,12 @@
     <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
 
     <script type="text/javascript" src="../dist/js/lib/jq.js"></script>
-    <script type="text/javascript" src="../dist/js/lib/plugin.js"></script>
+    <script type="text/javascript" src="../dist/js/lib/Drag.js"></script>
+    <script type="text/javascript" src="../dist/js/lib/verify.js"></script>
     <script type="text/javascript" src="../dist/js/boke/index.js"></script>
 
+    <!--测试js-->
+    <script>
+    </script>
 </body>
 </html>

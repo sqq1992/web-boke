@@ -152,6 +152,21 @@
     };
 
     /**
+     * 获取form表单下的input
+     * @param name  input的name值
+     * @returns {Base}
+     */
+    Base.prototype.form = function (name) {
+        var tempArry = [];
+        for(var i= 0,j=this.elements.length;i<j;i++){
+            var tempNode = this.elements[i][name];
+            tempArry.push(tempNode);
+        }
+        this.elements = tempArry;
+        return this;
+    };
+
+    /**
      * 插入html元素，如有有字符串，则进行插入操作，没有则为读取操作
      * @param str   传入的html字符串
      * @returns {*}
