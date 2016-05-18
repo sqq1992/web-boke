@@ -3,6 +3,7 @@
  */
 ;
 (function ($) {
+
     
     var Drag = (function ($) {
         var Drag = function (element) {
