@@ -4,7 +4,7 @@
 ;
 (function ($) {
 
-    
+
     var Drag = (function ($) {
         var Drag = function (element) {
             this.element = element;     //当前的节点

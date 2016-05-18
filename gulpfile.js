@@ -16,6 +16,7 @@ var wrap = require('gulp-wrap');
 var declare = require('gulp-declare');
 var rename = require('gulp-rename');
 
+
 //输出错误的function
 var handleError = function (err) {
     var colors = gutil.colors;
