@@ -294,7 +294,7 @@ body{
 .register-modal{
   width: 600px;
   height: 550px;
-  display: block;
+  display: none;
   top:10px;
   left: 200px;
 }
@@ -425,3 +425,169 @@ body{
   border: none;
   cursor: pointer;
 }
+
+/*
+ *  导航栏的样式
+ */
+.nav{
+  width: 465px;
+  height: 52px;
+  background: url(../../img/nav_bg.png) no-repeat;
+  margin: 50px auto 0;
+  position: relative;
+  line-height: 52px;
+  text-align: center;
+}
+.nav-list{
+  width: 96%;
+  margin: 0 auto;
+  li{
+    width: 20%;
+    float: left;
+    a{
+      color: #000;
+      font-weight: bold;
+    }
+  }
+}
+
+/*
+ *  中间的主页样式
+ */
+.main{
+  margin: 50px auto 0;
+  width: 900px;
+}
+.main-content{
+  width: 630px;
+  height: 570px;
+  float: right;
+  background: #eee url("../../img/loading4.gif") no-repeat center center;
+}
+.banner-box{
+  width: 900px;
+  height: 150px;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+}
+.banner-pic{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  li{
+    float: left;
+    img{
+      display: block;
+    }
+  }
+}
+.banner-dots-box{
+  position: absolute;
+  height: 25px;
+  width: 100%;
+  z-index: 100;
+  left: 0;
+  bottom: 0;
+}
+.banner-dots{
+  text-align: center;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  font-size: 0;
+  li{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #999;
+    margin: 4.5px;
+    border-radius: 50%;
+    cursor: pointer;
+    &.active{
+      background-color: #000;
+    }
+  }
+}
+.banner-dots-bg{
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+.main-slider{
+  width: 250px;
+  height: 500px;
+  margin: 0 auto;
+  float: left;
+}
+.slider-list{
+  &>h3{
+    width: 248px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    background: url(../../img/side_h.png);
+    text-indent: 10px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    border-bottom: none;
+    margin: 0;
+    cursor: pointer;
+  }
+}
+.new-list{
+  height: 150px;
+  border: 1px solid #ccc;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background: #fff;
+  &>li{
+    height: 30px;
+    line-height: 30px;
+    background: url(../../img/arrow4.gif) no-repeat 12px 45%;
+    text-indent: 30px;
+    a{
+      text-decoration: none;
+      color: #333;
+    }
+  }
+}
+
+/**
+ *  图片区域的样式
+ **/
+.photo {
+  width:900px;
+  background:#fff;
+  padding:10px 0 0 0;
+  margin: 0 auto;
+  dl{
+    width:225px;
+    height:270px;
+    float:left;
+    margin:5px 0 15px 0;
+    dt{
+      width:200px;
+      height:250px;
+      margin:0 auto;
+      img{
+        display:block;
+        cursor:pointer;
+      }
+    }
+    dd{
+      height:25px;
+      line-height:25px;
+      text-align:center;
+    }
+  }
+}
+

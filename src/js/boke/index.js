@@ -1,6 +1,6 @@
 
-
 $(function () {
+
     //个人中心
     $("#header-member-box").hover(function(){
         $("#header-member-list").addClass("active");
@@ -14,9 +14,37 @@ $(function () {
     //登录功能
     Login.init();
 
-    //开启注册的校验数据
-    $("#register").Verify();
+    //点击中间内容的左侧区域进行内容的显示与赢藏
+    $("#slider-list h3").toggle(function () {
+        $(this).next().animate({
+            mul:{
+                height:0,
+                opacity:0
+            },
+            step:80,
+            t:20
+        });
+    }, function () {
+        $(this).next().animate({
+            mul:{
+                height:150,
+                opacity:100
+            },
+            step:80,
+            t:20
+        });
+    });
+
+    //测试轮播插件
+    $("#turn-pic").TurnPic();
+
+    //实现懒加载动态加载图片
+    $("#photo").lazyLoading();
+
+
+
 });
+
 
 /**
  * 分享栏的功能模块
@@ -46,7 +74,9 @@ $(function () {
             //分享栏的top值
             this._resizeTop();
             $(window).on("scroll", function () {
-                _this._srcollTop();
+                setTimeout(function () {
+                    _this._srcollTop();
+                }, 100);
             });
         },
         //分享栏的H5的效果
@@ -64,12 +94,16 @@ $(function () {
             this.share.css({"left":"-211px"}).hover(function () {
                 _this.share.animate({
                     attr:"left",
-                    target:"0"
+                    target:"0",
+                    type:"constant",
+                    t:10
                 });
             }, function () {
                 _this.share.animate({
                     attr:"left",
-                    target:"-211"
+                    target:"-211",
+                    type:"constant",
+                    t:10
                 });
             });
         },
