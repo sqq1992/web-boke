@@ -15,7 +15,7 @@ var handlebars = require('gulp-handlebars');
 var wrap = require('gulp-wrap');
 var declare = require('gulp-declare');
 var rename = require('gulp-rename');
-
+var connect = require('gulp-connect');
 
 //输出错误的function
 var handleError = function (err) {
@@ -308,3 +308,12 @@ gulp.task('packjsp', function () {
 
 //整合打包
 gulp.task("packsum",['packcss','packfont','packimg','packjs','packjsp'])
+
+//开启http服务器
+gulp.task('connect', function () {
+    connect.server();
+});
+
+
+
+
